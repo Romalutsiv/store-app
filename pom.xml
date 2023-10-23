@@ -13,6 +13,10 @@
     <groupId>org.store</groupId>
     <artifactId>shop-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>inventory-service</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
