@@ -5,14 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eabdf40b-4b8a-4a4a-b6aa-f8bec981990a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/controller/InventoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/dto/RequestFromInvoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="Record" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2XADleZ1A9ztWBqO7PVZjVR0RGQ" />
@@ -23,13 +39,65 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "inventory-services",
+    "jdk.selected.JAVA_MODULE": "18",
+    "last_opened_file_path": "G:/Projects/microservices-new/shop-microservices/inventory-service/src/main/java/org/store/inventoryservice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.store.inventoryservice.service.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Projects\microservices-new\shop-microservices\inventory-service\src\main\java\org\store\inventoryservice" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.store.inventoryservice" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="InventoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="inventory-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.store.inventoryservice.InventoryServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.store.inventoryservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.InventoryServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -38,11 +106,107 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698063144457</updated>
-      <workItem from="1698063145626" duration="3000" />
+      <workItem from="1698063145626" duration="12256000" />
     </task>
+    <task id="LOCAL-00001" summary="Init project, add dependencies.">
+      <created>1698063370387</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698063370387</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Init inventory service.">
+      <created>1698063611075</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698063611075</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Create db connection. Init server port.">
+      <created>1698063691192</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698063691192</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Create Inventory model.">
+      <created>1698063823261</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698063823261</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Create Inventory repository.">
+      <created>1698063984151</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698063984151</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Create Inventory request and response dtos.">
+      <created>1698068771282</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698068771282</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Create InventoryService interface.">
+      <created>1698068811333</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698068811333</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add findByScuCodeIn method to InventoryRepository.&#10;Add Javadocs.">
+      <created>1698069076888</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698069076888</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Implement InventoryService.">
+      <created>1698071378838</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698071378838</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update service, repository and dtos.">
+      <created>1698073134232</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698073134232</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init project, add dependencies." />
+    <MESSAGE value="Init inventory service." />
+    <MESSAGE value="Create db connection. Init server port." />
+    <MESSAGE value="Create Inventory model." />
+    <MESSAGE value="Create Inventory repository." />
+    <MESSAGE value="Create Inventory request and response dtos." />
+    <MESSAGE value="Create InventoryService interface." />
+    <MESSAGE value="Add findByScuCodeIn method to InventoryRepository." />
+    <MESSAGE value="Add findByScuCodeIn method to InventoryRepository.&#10;Add Javadocs." />
+    <MESSAGE value="Implement InventoryService." />
+    <MESSAGE value="Update service, repository and dtos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update service, repository and dtos." />
   </component>
 </project>
