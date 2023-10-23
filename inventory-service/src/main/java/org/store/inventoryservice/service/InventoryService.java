@@ -2,8 +2,8 @@ package org.store.inventoryservice.service;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.NonNull;
-import org.store.inventoryservice.dto.InventoryRequest;
 import org.store.inventoryservice.dto.InventoryInStockResponse;
+import org.store.inventoryservice.dto.InventoryRequest;
 import org.store.inventoryservice.model.Inventory;
 
 import java.util.List;
@@ -55,6 +55,6 @@ public interface InventoryService {
      * @param requestList list with scuCodes and quantity information.
      * @return message with count of new inventories and count of updating inventories.
      */
-    String createListOfInventory(@NonNull final List<InventoryRequest> requestList);
+    String createListOfInventory(@NonNull final List<InventoryRequest> requestList, @NonNull final String invoiceType);
 
 }

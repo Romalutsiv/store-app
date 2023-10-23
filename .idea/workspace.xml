@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eabdf40b-4b8a-4a4a-b6aa-f8bec981990a" name="Changes" comment="Create Inventory model.">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/dto/InventoryInStockResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/dto/InventoryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/service/InventoryService.java" afterDir="false" />
+    <list default="true" id="eabdf40b-4b8a-4a4a-b6aa-f8bec981990a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/service/impl/InventoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/service/InventoryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,6 +68,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.store.inventoryservice.service.impl" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Projects\microservices-new\shop-microservices\inventory-service\src\main\java\org\store\inventoryservice" />
     </key>
@@ -107,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698063144457</updated>
-      <workItem from="1698063145626" duration="5594000" />
+      <workItem from="1698063145626" duration="8172000" />
     </task>
     <task id="LOCAL-00001" summary="Init project, add dependencies.">
       <created>1698063370387</created>
@@ -144,7 +143,28 @@
       <option name="project" value="LOCAL" />
       <updated>1698063984151</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Create Inventory request and response dtos.">
+      <created>1698068771282</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698068771282</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Create InventoryService interface.">
+      <created>1698068811333</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698068811333</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add findByScuCodeIn method to InventoryRepository.&#10;Add Javadocs.">
+      <created>1698069076888</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698069076888</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +187,10 @@
     <MESSAGE value="Create db connection. Init server port." />
     <MESSAGE value="Create Inventory model." />
     <MESSAGE value="Create Inventory repository." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Inventory repository." />
+    <MESSAGE value="Create Inventory request and response dtos." />
+    <MESSAGE value="Create InventoryService interface." />
+    <MESSAGE value="Add findByScuCodeIn method to InventoryRepository." />
+    <MESSAGE value="Add findByScuCodeIn method to InventoryRepository.&#10;Add Javadocs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add findByScuCodeIn method to InventoryRepository.&#10;Add Javadocs." />
   </component>
 </project>
