@@ -14,9 +14,4 @@ public interface InventoryRepository extends JpaRepository<Inventory ,Long> {
      */
     Optional<Inventory> findBySkuCode(String skuCode);
 
-    /**
-     * @param skuCodes list of scuCodes.
-     * @return list of Inventory models with present scuCodes.
-     */
-    List<Inventory> findBySkuCodeIn(List<String> skuCodes);
 }

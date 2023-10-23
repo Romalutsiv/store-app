@@ -20,12 +20,9 @@ public class InventoryServiceImpl implements InventoryService {
     @Override
     public InventoryInStockResponse isInStoke(@NonNull final String skuCode) {
         Inventory inventoryForChecking = getByScuCode(skuCode);
-        if (inventoryForChecking != null){
-            if (inventoryForChecking.getQuantity() > 0) return new InventoryInStockResponse(skuCode, true);
-            else return new InventoryInStockResponse(skuCode, false);
-        } else {
-            throw new RuntimeException("Not found");
-        }
+        if (inventoryForChecking.getQuantity() > 0) return new InventoryInStockResponse(skuCode, true);
+        else return new InventoryInStockResponse(skuCode, false);
+
     }
 
     @Override
@@ -35,34 +32,35 @@ public class InventoryServiceImpl implements InventoryService {
 
     @Override
     public Inventory getByScuCode(@NonNull final String skuCode) {
-        return repository.findBySkuCode(skuCode).orElseThrow(() -> new EntityNotFoundException("Product with skuCode: " + skuCode + " not found!"));
+        return repository.findBySkuCode(skuCode).orElseThrow(() -> new EntityNotFoundException(String.format("Product with skuCode: %s not found!", skuCode)));
     }
 
     @Override
     public Inventory create(@NonNull final InventoryRequest inventoryRequest) {
         Inventory inventory = new Inventory();
-        inventory.setSkuCode(inventoryRequest.scuCode());
+        inventory.setSkuCode(inventoryRequest.skuCode());
         inventory.setQuantity(inventoryRequest.quantity());
         return repository.save(inventory);
     }
 
     @Override
     public Inventory reduceQuantity(@NonNull final InventoryRequest inventoryRequest) {
-        Inventory inventory = getByScuCode(inventoryRequest.scuCode());
+        Inventory inventory = getByScuCode(inventoryRequest.skuCode());
         inventory.setQuantity(inventory.getQuantity() - inventoryRequest.quantity());
         return repository.save(inventory);
     }
 
     @Override
     public Inventory increaseQuantity(@NonNull final InventoryRequest inventoryRequest) {
-        Inventory inventory = getByScuCode(inventoryRequest.scuCode());
+        Inventory inventory = getByScuCode(inventoryRequest.skuCode());
         inventory.setQuantity(inventory.getQuantity() + inventoryRequest.quantity());
         return repository.save(inventory);
     }
 
     @Override
     public void deleteInventory(@NonNull final Long id) {
-        repository.deleteById(id);
+        Inventory inventory = repository.findById(id).orElseThrow(() -> new EntityNotFoundException(String.format("Product with skuCode: %d not found!", id)));
+        repository.delete(inventory);
     }
 
     @Override
@@ -72,28 +70,27 @@ public class InventoryServiceImpl implements InventoryService {
         switch (invoiceType){
             case "INCOME" -> {
                 for (InventoryRequest req : requestList) {
-                    Inventory byScuCode = getByScuCode(req.scuCode());
-                    if (byScuCode == null){
-                        create(req);
-                        countOfNewInventory++;
-                    } else {
+                    try{
+                        getByScuCode(req.skuCode());
                         increaseQuantity(req);
                         countOfExistInventory++;
+                    } catch (EntityNotFoundException e){
+                        create(req);
+                        countOfNewInventory++;
                     }
                 }
             }
             case "OUTCOME" -> {
                 for (InventoryRequest req : requestList) {
-                    Inventory byScuCode = getByScuCode(req.scuCode());
-                    if (byScuCode == null){
-                        create(req);
-                        countOfNewInventory++;
-                    } else {
+                    try{
+                        getByScuCode(req.skuCode());
                         reduceQuantity(req);
                         countOfExistInventory++;
+                    } catch (EntityNotFoundException e){
+                        create(req);
+                        countOfNewInventory++;
                     }
                 }
-
             }
         }
         return String.format("%d inventory was created, %d inventory was updated!", countOfNewInventory, countOfExistInventory);
