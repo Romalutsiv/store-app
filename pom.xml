@@ -16,6 +16,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>inventory-service</module>
+        <module>accounting-service</module>
     </modules>
 
     <properties>
