@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eabdf40b-4b8a-4a4a-b6aa-f8bec981990a" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/controller/InventoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/dto/InventoryResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/mapper/InventoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/dto/RequestFromInvoice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/dto/InventoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/dto/InventoryRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/repository/InventoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/repository/InventoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/service/impl/InventoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/store/inventoryservice/service/impl/InventoryServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698063144457</updated>
-      <workItem from="1698063145626" duration="9863000" />
+      <workItem from="1698063145626" duration="12256000" />
     </task>
     <task id="LOCAL-00001" summary="Init project, add dependencies.">
       <created>1698063370387</created>
@@ -175,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698071378838</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update service, repository and dtos.">
+      <created>1698073134232</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698073134232</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +206,7 @@
     <MESSAGE value="Add findByScuCodeIn method to InventoryRepository." />
     <MESSAGE value="Add findByScuCodeIn method to InventoryRepository.&#10;Add Javadocs." />
     <MESSAGE value="Implement InventoryService." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement InventoryService." />
+    <MESSAGE value="Update service, repository and dtos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update service, repository and dtos." />
   </component>
 </project>
